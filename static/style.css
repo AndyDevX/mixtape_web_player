@@ -1,0 +1,8 @@
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-sm {
+    border: 2px solid royalblue;
+    border-radius: 5px;
+}
+
+.mixtape {
+    width: 75%;
+}
