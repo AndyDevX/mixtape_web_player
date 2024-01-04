@@ -11,16 +11,37 @@
     </head>
     
     <div class="container-fluid">
+
+        <div id="navbar">
+            <a href="#">Archivo</a>
+            <a href="#">Editar</a>
+            <a href="#">Vista</a>
+            <a href="#">Reproducción</a>
+            <a href="#">Ayuda</a>
+        </div>
+
         <div id="mixtapes">
             <div>
-                Opciones
-            </div>
-            <div>
-                Listas
+                Mixtapes
             </div>
         </div>
-        <div id="cassette">Cassette player</div>
-        <div id="community">Community section (Rating and comments)</div>
+
+        <div id="cassette">
+            Cassette player
+            <div id="player_panel">
+                <div id="player_buttons">
+                    <i class="fa-solid fa-shuffle"></i> <i class="fa-solid fa-backward-step"></i> <i class="fa-solid fa-circle-pause"></i> <i class="fa-solid fa-circle-play" hidden></i> <i class="fa-solid fa-forward-step"></i> <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div id="player_progress">
+                    0:00 <progress id="progress" max="100" value="70"></progress> 2:52
+                </div>
+            </div>
+        </div>
+        
+        <div id="community">
+            Community section (Rating and comments)
+        </div>
+
     </div>
 
 </html>

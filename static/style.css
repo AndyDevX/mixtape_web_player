@@ -1,37 +1,63 @@
 .container-fluid {
+  background-color: #12151c;
+  color: white;
   display: grid;
   height: 100vh;
   grid-template-columns: 0.7fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr;
   grid-template-areas: 
-  "mixtapes cassette cassette cassette"
+  "navbar navbar navbar navbar"
   "mixtapes cassette cassette cassette"
   "mixtapes cassette cassette cassette"
   "mixtapes community community community"
   ;
-  grid-gap: 0.3rem;
+  grid-gap: 0.7rem;
+}
+
+#navbar {
+  background-color: #1b222c;
+  grid-area: navbar;
 }
 
 #mixtapes {
-  background-color: turquoise;
+  background-color: #1b222c;
   grid-area: mixtapes;
 }
 
 #cassette {
-  background-color: aqua;
+  background-color: #1b222c;
   grid-area: cassette;
+  position: relative;
 }
 
 #community {
-  background-color: aquamarine;
+  background-color: #1b222c;
   grid-area: community;
 }
+
+#player_panel {
+  border-top: #12151c 3px solid;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+}
+  #player_buttons {
+    font-size: xx-large;
+    letter-spacing: 1rem;
+  }
+  #progress {
+    width: 70%;
+  }
 
 @media only screen and (max-width:550px) {
   .container-fluid {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr .7fr 2.5fr;
+    grid-template-rows: 0.4fr 3fr .7fr 2.5fr;
     grid-template-areas:
+    "navbar"
     "cassette"
     "mixtapes"
     "community"
