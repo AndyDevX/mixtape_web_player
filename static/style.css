@@ -4,14 +4,14 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 0.7fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr;
+  grid-template-rows: 0.2fr 2fr 0.4fr 1.2fr;
   grid-template-areas: 
   "navbar navbar navbar navbar"
   "mixtapes cassette cassette cassette"
-  "mixtapes cassette cassette cassette"
+  "mixtapes player_panel player_panel player_panel"
   "mixtapes community community community"
   ;
-  grid-gap: 0.7rem;
+  grid-gap: 0.5rem;
 }
 
 #navbar {
@@ -27,8 +27,31 @@
 #cassette {
   background-color: #1b222c;
   grid-area: cassette;
+  overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el div */
+  display: flex;
+  justify-content: center;
   position: relative;
 }
+  #tape {
+    width: auto;
+    height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Elimina el espacio adicional debajo de la imagen debido a la configuración inline */
+  }
+  #track-info {
+    position: absolute;
+    top: 30vh;
+    color: darkblue;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  #mixtape-info {
+    position: absolute;
+    top: 6.5vh;
+    color: slateblue;
+    font-size: 250%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    rotate: 5.625deg;
+  }
 
 #community {
   background-color: #1b222c;
@@ -36,16 +59,14 @@
 }
 
 #player_panel {
-  border-top: #12151c 3px solid;
+  background-color: #1b222c;
+  grid-area: player_panel;
 
-  position: absolute;
-  bottom: 0;
   width: 100%;
-
   text-align: center;
 }
   #player_buttons {
-    font-size: xx-large;
+    font-size: x-large;
     letter-spacing: 1rem;
   }
   #progress {
@@ -55,13 +76,18 @@
 @media only screen and (max-width:550px) {
   .container-fluid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 3fr .7fr 2.5fr;
+    grid-template-rows: 0.4fr 3fr 0.5fr 1fr 2.5fr;
     grid-template-areas:
     "navbar"
     "cassette"
+    "player_panel"
     "mixtapes"
     "community"
     ;
+  }
+
+  #player_buttons {
+    font-size: large;
   }
   
 }
