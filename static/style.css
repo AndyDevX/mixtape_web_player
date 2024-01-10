@@ -73,6 +73,10 @@
     width: 70%;
   }
 
+  #mix-list {
+    list-style: none;
+  }
+
 @media only screen and (max-width:550px) {
   .container-fluid {
     grid-template-columns: 1fr;
@@ -90,4 +94,11 @@
     font-size: large;
   }
   
+  #mix-list {
+    list-style: none;
+    text-align: center;
+  }
+  #mix-list li {
+    display: inline-block;
+  }
 }
