@@ -41,9 +41,16 @@
   }
 
   #tape-background {
-    width: 400px;
-    height: auto;
-    margin-top: 2.5rem;
+    background-color: rgb(19, 20, 20);
+    position: absolute;
+    top: 2.5rem;
+    width: 390px;
+    height: 180px;
+  }
+  #background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
 #community {
@@ -93,5 +100,11 @@
   }
   #mix-list li {
     display: inline-block;
+  }
+
+  #tape-background {
+    top: 1.5rem;
+    width: 280px;
+    height: 140px;
   }
 }
