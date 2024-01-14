@@ -34,23 +34,16 @@
 }
   #tape {
     width: auto;
-    height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
-    display: block; /* Elimina el espacio adicional debajo de la imagen debido a la configuración inline */
-  }
-  #track-info {
+    height: 350%; /* La altura se ajustará automáticamente para mantener la proporción */
+    top: 50%;
     position: absolute;
-    top: 30vh;
-    color: darkblue;
-    font-weight: bold;
-    font-size: x-large;
+    transform: translateY(-50%);
   }
-  #mixtape-info {
-    position: absolute;
-    top: 6.5vh;
-    color: slateblue;
-    font-size: 250%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    rotate: 5.625deg;
+
+  #tape-background {
+    width: 400px;
+    height: auto;
+    margin-top: 2.5rem;
   }
 
 #community {
