@@ -78,14 +78,25 @@
         </div>
 
         <div id="mixtapes">
-            <div>
-                <ul id="mix-list">
-                    <li>Heavy Shoegaze</li>
-                    <li>Driving in the 90s</li>
-                    <li>End credits</li>
-                    <li>Liminality</li>
-                    <li>Steve Harrington's walkman</li>
-                </ul>
+            <div class="mixtape">
+                <div class="mixtape_image">
+                    <img src="assets/img/vaporwave.jpg" alt="mix">
+                </div>
+                <span class="mixtape-title">80s synthwave</span>
+            </div>
+
+            <div class="mixtape">
+                <div class="mixtape_image">
+                    <img src="assets/img/lights.jpg" alt="mix">
+                </div>
+                <span class="mixtape-title">90s pop</span>
+            </div>
+
+            <div class="mixtape">
+                <div class="mixtape_image">
+                    <img src="assets/img/pattern.jpg" alt="mix">
+                </div>
+                <span class="mixtape-title">Whatever</span>
             </div>
         </div>
 
@@ -99,7 +110,11 @@
 
         <div id="player_panel">
             <div id="player_buttons">
-                <i class="fa-solid fa-shuffle"></i> <i class="fa-solid fa-backward-step"></i> <i class="fa-solid fa-circle-pause"></i> <i class="fa-solid fa-circle-play" hidden></i> <i class="fa-solid fa-forward-step"></i> <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-circle-pause"></i>    <i class="fa-solid fa-circle-play" hidden></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat"></i>
             </div>
             <div id="player_progress">
                 0:00 <progress id="progress" max="100" value="70"></progress> 2:52
