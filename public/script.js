@@ -17,14 +17,23 @@ fetch('public/mixtapes.json')
       imagen.src = playlist.cover; // Puedes personalizar la imagen según tus necesidades
       imagen.alt = playlist.autor;
 
-      const mixtapeTitle = document.createElement('span');
-      mixtapeTitle.className = 'mixtape-title';
+      const mixtapeInfo = document.createElement('div');
+      mixtapeInfo.className = 'mixtape_info';
+
+      const mixtapeTitle = document.createElement('p');
+      mixtapeTitle.className = 'mixtape_name';
       mixtapeTitle.textContent = playlist.name;
+
+      const mixtapeAutor = document.createElement('p');
+      mixtapeAutor.className = 'mixtape_autor';
+      mixtapeAutor.textContent = playlist.autor;
 
       // Adjuntar elementos al árbol DOM
       mixtapeImage.appendChild(imagen);
       mixtape.appendChild(mixtapeImage);
-      mixtape.appendChild(mixtapeTitle);
+      mixtape.appendChild(mixtapeInfo);
+      mixtapeInfo.appendChild(mixtapeTitle);
+      mixtapeInfo.appendChild(mixtapeAutor);
 
       // Agregar la nueva mixtape al contenedor principal
       contenedorPlaylists.appendChild(mixtape);

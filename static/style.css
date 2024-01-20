@@ -44,9 +44,23 @@
       height: 100%;
       object-fit: cover;
     }
-
-    .mixtape-title {
+    .mixtape_info {
+      display: block;
+      position: relative;
     }
+      .mixtape_name {
+        position: absolute;
+        width: 7.5rem;
+        overflow: hidden;
+        top: -1.5rem;
+      }
+      .mixtape_autor {
+        color: #888888;
+        position: absolute;
+        width: 6.5rem;
+        overflow: hidden;
+      }
+      
 
 #cassette {
   background-color: #1b222c;
@@ -81,6 +95,9 @@
   background-color: #1b222c;
   grid-area: community;
 }
+  .fa-star {
+    color: #DF3889;
+  }
 
 #player_panel {
   background-color: #1b222c;
