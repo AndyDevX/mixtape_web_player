@@ -22,6 +22,8 @@
 #mixtapes {
   background-color: #1b222c;
   grid-area: mixtapes;
+  overflow: auto;
+  white-space: nowrap;
 }
   .mixtape {
     background: linear-gradient(90deg, #12151C 0%, #1c212b 35%, #161b22 100%);
@@ -122,6 +124,10 @@
   #mixtapes {
     display: flex;
     flex-direction: row;
+    
+    
+    overflow: auto;
+    white-space: nowrap;
   }
 
   .mixtape_image {

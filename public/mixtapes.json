@@ -1,0 +1,44 @@
+{
+    "mixtapes": [
+        {
+            "name":"Shoegaze",
+            "autor":"Andy",
+            "cover":"assets/mix_covers/shoegaze.png"
+        },
+        {
+            "name":"90s pop",
+            "autor":"Andy",
+            "cover":"assets/mix_covers/pattern.jpg"
+        },
+        {
+            "name":"songs",
+            "autor":"Sammy",
+            "cover":"assets/mix_covers/songs.jpg"
+        },
+        {
+            "name":"Nu Metal",
+            "autor":"Metallica25",
+            "cover":"assets/mix_covers/metal.jpg"
+        },
+        {
+            "name":"Classical",
+            "autor":"MozartX",
+            "cover":"assets/mix_covers/classical.jpg"
+        },
+        {
+            "name":"Synth",
+            "autor":"Monkey11",
+            "cover":"assets/mix_covers/vaporwave.jpg"
+        },
+        {
+            "name":"Garage revival",
+            "autor":"Idk31",
+            "cover":"assets/mix_covers/garage.jpg"
+        },
+        {
+            "name":"Kenergy",
+            "autor":"Kentallica",
+            "cover":"assets/mix_covers/kenergy.jpg"
+        }
+    ]
+}
