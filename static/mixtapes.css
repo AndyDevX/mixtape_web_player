@@ -1,0 +1,41 @@
+#mixtapes {
+    background-color: #1b222c;
+    grid-area: mixtapes;
+    overflow: auto;
+    white-space: nowrap;
+  }
+    .mixtape {
+      background: linear-gradient(90deg, #12151C 0%, #1c212b 35%, #161b22 100%);
+      margin: 10px;
+  
+      display: flex;
+      align-items: center;
+  
+      overflow: hidden;
+    }
+      .mixtape_image {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+      }
+      .mixtape_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .mixtape_info {
+        display: block;
+        position: relative;
+      }
+        .mixtape_name {
+          position: absolute;
+          width: 7.5rem;
+          overflow: hidden;
+          top: -1.5rem;
+        }
+        .mixtape_autor {
+          color: #888888;
+          position: absolute;
+          width: 6.5rem;
+          overflow: hidden;
+        }

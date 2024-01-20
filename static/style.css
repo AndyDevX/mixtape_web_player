@@ -19,77 +19,10 @@
   grid-area: navbar;
 }
 
-#mixtapes {
-  background-color: #1b222c;
-  grid-area: mixtapes;
-  overflow: auto;
-  white-space: nowrap;
-}
-  .mixtape {
-    background: linear-gradient(90deg, #12151C 0%, #1c212b 35%, #161b22 100%);
-    margin: 10px;
 
-    display: flex;
-    align-items: center;
 
-    overflow: hidden;
-  }
-    .mixtape_image {
-      width: 4rem;
-      height: 4rem;
-      margin-right: 1rem;
-    }
-    .mixtape_image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .mixtape_info {
-      display: block;
-      position: relative;
-    }
-      .mixtape_name {
-        position: absolute;
-        width: 7.5rem;
-        overflow: hidden;
-        top: -1.5rem;
-      }
-      .mixtape_autor {
-        color: #888888;
-        position: absolute;
-        width: 6.5rem;
-        overflow: hidden;
-      }
-      
 
-#cassette {
-  background-color: #1b222c;
-  grid-area: cassette;
-  overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el div */
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-  #tape {
-    width: auto;
-    height: 90%; /* La altura se ajustará automáticamente para mantener la proporción */
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-  }
 
-  #tape-background {
-    background-color: rgb(19, 20, 20);
-    position: absolute;
-    top: 2.5rem;
-    width: 390px;
-    height: 180px;
-  }
-  #background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
 #community {
   background-color: #1b222c;
@@ -141,7 +74,6 @@
   #mixtapes {
     display: flex;
     flex-direction: row;
-    
     
     overflow: auto;
     white-space: nowrap;

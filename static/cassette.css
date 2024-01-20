@@ -1,0 +1,45 @@
+#cassette {
+    background-color: #1b222c;
+    grid-area: cassette;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el div */
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+    #tape {
+      width: auto;
+      height: 90%; /* La altura se ajustará automáticamente para mantener la proporción */
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  
+    #tape-background {
+      background-color: rgb(19, 20, 20);
+      position: absolute;
+      top: 2.5rem;
+      width: 390px;
+      height: 180px;
+    }
+    #background-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #mixtape-view-name {
+      z-index: 1;
+      margin-top: 3rem;
+      color: black;
+      font-size: x-large;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    #song-title {
+      position: absolute;
+      z-index: 1;
+      margin-top: 14.5rem;
+      color: white;
+      font-size: larger;
+      font-family: 'PT Sans', sans-serif;
+    }
