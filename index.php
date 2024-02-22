@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MixTape player</title>
+        <title>Web MixTape player</title>
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
         <?php
             include("static/styles.html");
